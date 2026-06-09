@@ -1,0 +1,1 @@
+console.log("My namwe is shakir ullah")
