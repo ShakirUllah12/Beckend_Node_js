@@ -1,4 +1,4 @@
-import { readFile, writeFile,appendFile } from "fs/promises";
+import { readFile, writeFile,appendFile,mkdir} from "fs/promises";
 
 // const write_File = async (fileName, content) => {
 //     await writeFile(fileName, content);
@@ -7,9 +7,14 @@ import { readFile, writeFile,appendFile } from "fs/promises";
 
 // write_File("third.txt", "thhhfghjgm");
 
-const append_File=async (fileName,content)=>{
-    await appendFile(fileName,content)
-    console.log("server is running")
-}
+// const append_File=async (fileName,content)=>{
+//     await appendFile(fileName,content)
+//     console.log("server is running")
+// }
 
-append_File("third.txt","no i dont want to say anything")
+// append_File("third.txt","no i dont want to say anything")
+
+const create_dir= async (dir)=>{
+await mkdir(dir)
+}
+create_dir("components")
